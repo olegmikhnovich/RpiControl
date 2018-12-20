@@ -4,4 +4,4 @@ xcode_destination: platform=macOS
 xcode_project: RpiControl.xcodeproj
 podfile: ./Podfile
 
-script: bundle exec pod install
+script: pod install
