@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		257A440E53A0D74E0BA7AD95 /* libPods-RpiControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05229C4EEA0B5BAE2FBCFE16 /* libPods-RpiControl.a */; };
+		84210F4A21C25BA400DF15E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84210F4921C25BA400DF15E1 /* AppDelegate.swift */; };
+		84210F4C21C25BA400DF15E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84210F4B21C25BA400DF15E1 /* HomeViewController.swift */; };
+		84210F4E21C25BA600DF15E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84210F4D21C25BA600DF15E1 /* Assets.xcassets */; };
+		84210F5121C25BA600DF15E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84210F4F21C25BA600DF15E1 /* Main.storyboard */; };
+		84210F7821C29C8D00DF15E1 /* SearchDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84210F7721C29C8D00DF15E1 /* SearchDevices.swift */; };
+		8469981021C3DDF4005048B0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469980F21C3DDF4005048B0 /* Device.swift */; };
+		8494309021C3F78100DFBE55 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494308F21C3F78100DFBE55 /* Extentions.swift */; };
+		84AC748D21CA725100570432 /* EtcherBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC748C21CA725100570432 /* EtcherBridge.swift */; };
+		84B6203521C8E0840042967D /* VolumesUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6203421C8E0840042967D /* VolumesUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05229C4EEA0B5BAE2FBCFE16 /* libPods-RpiControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RpiControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E8EAF01DA410099AD04D87 /* Pods-RpiControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RpiControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RpiControl/Pods-RpiControl.debug.xcconfig"; sourceTree = "<group>"; };
+		79DC42A15E7282F78D983590 /* Pods-RpiControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RpiControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-RpiControl/Pods-RpiControl.release.xcconfig"; sourceTree = "<group>"; };
+		84210F4621C25BA400DF15E1 /* RpiControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RpiControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84210F4921C25BA400DF15E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84210F4B21C25BA400DF15E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84210F4D21C25BA600DF15E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84210F5021C25BA600DF15E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84210F5221C25BA600DF15E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84210F5321C25BA600DF15E1 /* RpiControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RpiControl.entitlements; sourceTree = "<group>"; };
+		84210F7721C29C8D00DF15E1 /* SearchDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDevices.swift; sourceTree = "<group>"; };
+		8469980F21C3DDF4005048B0 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		8494308F21C3F78100DFBE55 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		84AC748C21CA725100570432 /* EtcherBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcherBridge.swift; sourceTree = "<group>"; };
+		84B6203421C8E0840042967D /* VolumesUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesUtility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84210F4321C25BA400DF15E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257A440E53A0D74E0BA7AD95 /* libPods-RpiControl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44FEEDAE84FA138F6188AD58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48E8EAF01DA410099AD04D87 /* Pods-RpiControl.debug.xcconfig */,
+				79DC42A15E7282F78D983590 /* Pods-RpiControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7349650C7A339D1F07196F40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05229C4EEA0B5BAE2FBCFE16 /* libPods-RpiControl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84210F3D21C25BA300DF15E1 = {
+			isa = PBXGroup;
+			children = (
+				84210F4821C25BA400DF15E1 /* RpiControl */,
+				84210F4721C25BA400DF15E1 /* Products */,
+				44FEEDAE84FA138F6188AD58 /* Pods */,
+				7349650C7A339D1F07196F40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84210F4721C25BA400DF15E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84210F4621C25BA400DF15E1 /* RpiControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84210F4821C25BA400DF15E1 /* RpiControl */ = {
+			isa = PBXGroup;
+			children = (
+				8469981321C3F611005048B0 /* Utils */,
+				8469981221C3E210005048B0 /* ViewControllers */,
+				8469981121C3E053005048B0 /* SearchDevices */,
+				84210F4921C25BA400DF15E1 /* AppDelegate.swift */,
+				84210F4D21C25BA600DF15E1 /* Assets.xcassets */,
+				84210F4F21C25BA600DF15E1 /* Main.storyboard */,
+				84210F5221C25BA600DF15E1 /* Info.plist */,
+				84210F5321C25BA600DF15E1 /* RpiControl.entitlements */,
+			);
+			path = RpiControl;
+			sourceTree = "<group>";
+		};
+		8469981121C3E053005048B0 /* SearchDevices */ = {
+			isa = PBXGroup;
+			children = (
+				84210F7721C29C8D00DF15E1 /* SearchDevices.swift */,
+				8469980F21C3DDF4005048B0 /* Device.swift */,
+			);
+			path = SearchDevices;
+			sourceTree = "<group>";
+		};
+		8469981221C3E210005048B0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84210F4B21C25BA400DF15E1 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8469981321C3F611005048B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8494308F21C3F78100DFBE55 /* Extentions.swift */,
+				84B6203421C8E0840042967D /* VolumesUtility.swift */,
+				84AC748C21CA725100570432 /* EtcherBridge.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84210F4521C25BA400DF15E1 /* RpiControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84210F6C21C25BA600DF15E1 /* Build configuration list for PBXNativeTarget "RpiControl" */;
+			buildPhases = (
+				377D8490FB4311ED39C083EF /* [CP] Check Pods Manifest.lock */,
+				84210F4221C25BA400DF15E1 /* Sources */,
+				84210F4321C25BA400DF15E1 /* Frameworks */,
+				84210F4421C25BA400DF15E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RpiControl;
+			productName = RpiControl;
+			productReference = 84210F4621C25BA400DF15E1 /* RpiControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84210F3E21C25BA300DF15E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Oleg Mikhnovich";
+				TargetAttributes = {
+					84210F4521C25BA400DF15E1 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 84210F4121C25BA300DF15E1 /* Build configuration list for PBXProject "RpiControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84210F3D21C25BA300DF15E1;
+			productRefGroup = 84210F4721C25BA400DF15E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84210F4521C25BA400DF15E1 /* RpiControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84210F4421C25BA400DF15E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84210F4E21C25BA600DF15E1 /* Assets.xcassets in Resources */,
+				84210F5121C25BA600DF15E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377D8490FB4311ED39C083EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RpiControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84210F4221C25BA400DF15E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84210F4C21C25BA400DF15E1 /* HomeViewController.swift in Sources */,
+				84210F7821C29C8D00DF15E1 /* SearchDevices.swift in Sources */,
+				8494309021C3F78100DFBE55 /* Extentions.swift in Sources */,
+				84210F4A21C25BA400DF15E1 /* AppDelegate.swift in Sources */,
+				84B6203521C8E0840042967D /* VolumesUtility.swift in Sources */,
+				84AC748D21CA725100570432 /* EtcherBridge.swift in Sources */,
+				8469981021C3DDF4005048B0 /* Device.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84210F4F21C25BA600DF15E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84210F5021C25BA600DF15E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84210F6A21C25BA600DF15E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84210F6B21C25BA600DF15E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		84210F6D21C25BA600DF15E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E8EAF01DA410099AD04D87 /* Pods-RpiControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5Z77QS26A3;
+				INFOPLIST_FILE = RpiControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleg-Mikhnovich.RpiControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RpiControl-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84210F6E21C25BA600DF15E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DC42A15E7282F78D983590 /* Pods-RpiControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5Z77QS26A3;
+				INFOPLIST_FILE = RpiControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleg-Mikhnovich.RpiControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RpiControl-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84210F4121C25BA300DF15E1 /* Build configuration list for PBXProject "RpiControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84210F6A21C25BA600DF15E1 /* Debug */,
+				84210F6B21C25BA600DF15E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84210F6C21C25BA600DF15E1 /* Build configuration list for PBXNativeTarget "RpiControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84210F6D21C25BA600DF15E1 /* Debug */,
+				84210F6E21C25BA600DF15E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84210F3E21C25BA300DF15E1 /* Project object */;
+}
