@@ -32,12 +32,30 @@ class HomeViewController: NSViewController {
     func initSearchTable() {
         dashboardTable.delegate = self
         dashboardTable.dataSource = self
+        dashboardTable.doubleAction = #selector(tableViewDoubleClick(_:))
     }
     
     func initUIComponentsState() {
         scanProgressIndicator.isHidden = true
         scanProgressIndicator.startAnimation(self)
         VolumesUtility(comboBox: self.volumesComboBox)
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "openLoginView") {
+            if sender != nil {
+                let dev = sender as! Device
+                let loginController = segue.destinationController as! LoginViewController
+                loginController.setDevice(device: dev)
+            }
+        }
+    }
+    
+    @objc func tableViewDoubleClick(_ sender:AnyObject) {
+        if dashboardTable.selectedRow >= 0 {
+            let item = devicesList[dashboardTable.selectedRow]
+            self.performSegue(withIdentifier: "openLoginView", sender: item)
+        }
     }
     
     func dialogOKCancel(question: String, text: String) -> Bool {
