@@ -27,14 +27,14 @@ class SearchDevices {
         var devices = [Device]()
         let pref = self.getAddressRange(address: range)
         let queue = OperationQueue()
-        for i in 1..<255 {
+        for i in 1..<256 {
             queue.addOperation {
                 let client = TCPClient(address: "\(pref).\(i)", port: 4822)
                 switch client.connect(timeout: 1) {
                 case .success:
-                    switch client.send(string: "mikhnovich.oleg.rpicontrol" ) {
+                    switch client.send(string: "scanner^mikhnovich.oleg.rpicontrol") {
                     case .success:
-                        let data = client.read(1024, timeout: 1)
+                        let data = client.read(8192, timeout: 1)
                         if let response = String(bytes: data ?? [UInt8](), encoding: .utf8) {
                             devices.append(Device(rawPackage: response, ip: "\(pref).\(i)"))
                         }

@@ -15,11 +15,18 @@ class Device {
     private var ip: String
     
     init(rawPackage: String, ip: String) {
-        let d = rawPackage.split(separator: "|")
-        self.name = String(d[0])
-        self.type = String(d[1])
-        self.os = String(d[2])
         self.ip = ip
+        
+        let d = rawPackage.split(separator: "|")
+        if d.count == 3 {
+            self.name = String(d[0])
+            self.type = String(d[1])
+            self.os = String(d[2])
+        } else {
+            self.name = "Unknown"
+            self.type = "Unknown"
+            self.os = "Unknown"
+        }
     }
     
     init(name: String, type: String, os: String, ip: String) {
