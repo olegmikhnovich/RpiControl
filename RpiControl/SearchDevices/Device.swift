@@ -14,10 +14,10 @@ class Device {
     private var os: String
     private var ip: String
     
-    init(rawPackage: String, ip: String) {
+    init(raw: String, ip: String) {
         self.ip = ip
         
-        let d = rawPackage.split(separator: "|")
+        let d = raw.split(separator: "|")
         if d.count == 3 {
             self.name = String(d[0])
             self.type = String(d[1])

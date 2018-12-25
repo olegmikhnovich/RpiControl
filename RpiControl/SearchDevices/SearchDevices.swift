@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftSocket
 
 class SearchDevices {
     
@@ -29,20 +28,16 @@ class SearchDevices {
         let queue = OperationQueue()
         for i in 1..<256 {
             queue.addOperation {
-                let client = TCPClient(address: "\(pref).\(i)", port: 4822)
-                switch client.connect(timeout: 1) {
-                case .success:
-                    switch client.send(string: "scanner^mikhnovich.oleg.rpicontrol") {
-                    case .success:
-                        let data = client.read(8192, timeout: 1)
-                        if let response = String(bytes: data ?? [UInt8](), encoding: .utf8) {
-                            devices.append(Device(rawPackage: response, ip: "\(pref).\(i)"))
+                let connection = ConnectionAgent(address: "\(pref).\(i)")
+                if connection.isConnected {
+                    let req = Package(header: "scanner", content: "mikhnovich.oleg.rpicontrol")
+                    if let resp = connection.sendMessage(package: req) {
+                        if resp.getHeader() == "scanner" {
+                            devices.append(Device(raw: resp.getContent(), ip: "\(pref).\(i)"))
                         }
-                    case .failure( _): break
                     }
-                case .failure( _): break
                 }
-                client.close()
+                connection.dispose()
             }
         }
         queue.waitUntilAllOperationsAreFinished()

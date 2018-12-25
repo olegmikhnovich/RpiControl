@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import AppleScriptObjC
 
 class HomeViewController: NSViewController {
     @IBOutlet weak var scanButton: NSButton!
