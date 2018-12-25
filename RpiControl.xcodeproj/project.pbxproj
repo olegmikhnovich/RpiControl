@@ -18,6 +18,7 @@
 		8494309021C3F78100DFBE55 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494308F21C3F78100DFBE55 /* Extentions.swift */; };
 		84B6203521C8E0840042967D /* VolumesUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6203421C8E0840042967D /* VolumesUtility.swift */; };
 		84B6A56B21D24CE80006ABC9 /* ConnectionAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6A56A21D24CE80006ABC9 /* ConnectionAgent.swift */; };
+		84B6A56F21D26F4A0006ABC9 /* DeviceSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */; };
 		84D04AE621D0ED5E00A185F4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D04AE521D0ED5E00A185F4 /* Package.swift */; };
 		84D04AE821D0F77D00A185F4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D04AE721D0F77D00A185F4 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		8494308F21C3F78100DFBE55 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		84B6203421C8E0840042967D /* VolumesUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesUtility.swift; sourceTree = "<group>"; };
 		84B6A56A21D24CE80006ABC9 /* ConnectionAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionAgent.swift; sourceTree = "<group>"; };
+		84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsViewController.swift; sourceTree = "<group>"; };
 		84D04AE521D0ED5E00A185F4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		84D04AE721D0F77D00A185F4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 				84210F4B21C25BA400DF15E1 /* HomeViewController.swift */,
 				8449103C21CBC55F0050692C /* LoginViewController.swift */,
 				84D04AE721D0F77D00A185F4 /* DashboardViewController.swift */,
+				84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				84210F7821C29C8D00DF15E1 /* SearchDevices.swift in Sources */,
 				84B6A56B21D24CE80006ABC9 /* ConnectionAgent.swift in Sources */,
 				8494309021C3F78100DFBE55 /* Extentions.swift in Sources */,
+				84B6A56F21D26F4A0006ABC9 /* DeviceSettingsViewController.swift in Sources */,
 				84210F4A21C25BA400DF15E1 /* AppDelegate.swift in Sources */,
 				84D04AE621D0ED5E00A185F4 /* Package.swift in Sources */,
 				8449103D21CBC55F0050692C /* LoginViewController.swift in Sources */,
