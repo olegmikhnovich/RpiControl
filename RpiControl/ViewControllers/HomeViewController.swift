@@ -18,8 +18,10 @@ class HomeViewController: NSViewController {
     @IBOutlet weak var flashInfoLabel: NSTextField!
     @IBOutlet weak var flashProgress: NSProgressIndicator!
     @IBOutlet weak var startFlashButton: NSButton!
+    @IBOutlet weak var searchBox: NSSearchField!
     
     var devicesList: [Device] = []
+    var devicesListCache: [Device] = []
     var firmwareFilePath: String = ""
     
     override func viewDidLoad() {
@@ -65,6 +67,28 @@ class HomeViewController: NSViewController {
         alert.addButton(withTitle: "OK")
         alert.addButton(withTitle: "Cancel")
         return alert.runModal() == .alertFirstButtonReturn
+    }
+    
+    @IBAction func searchChangedAction(_ sender: Any) {
+        let searchRequest = searchBox.stringValue.lowercased()
+        if devicesListCache.count > 0 {
+            devicesList = devicesListCache
+            devicesListCache = []
+        }
+        if searchRequest.count > 0 {
+            devicesListCache = devicesList
+            devicesList = []
+            var flag: Bool = false
+            for d in devicesListCache {
+                flag = false
+                if d.getName().lowercased().range(of: searchRequest) != nil { flag = true }
+                if d.getType().lowercased().range(of: searchRequest) != nil { flag = true }
+                if d.getOS().lowercased().range(of: searchRequest) != nil { flag = true }
+                if d.getIP().lowercased().range(of: searchRequest) != nil { flag = true }
+                if flag == true { devicesList.append(d) }
+            }
+        }
+        self.dashboardTable.reloadData()
     }
     
     @IBAction func freshVolumesList(_ sender: Any) {

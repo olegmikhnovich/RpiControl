@@ -118,4 +118,24 @@ class DeviceSettingsViewController: NSTabViewController {
         connection.dispose()
     }
     
+    @IBAction func rebootBtnClick(_ sender: Any) {
+        guard let dev = device else { return }
+        let connection = ConnectionAgent(address: dev.getIP())
+        if connection.isConnected {
+            let _ = connection.sendMessage(package: Package(header: "reboot-device", content: "..."))
+        }
+        connection.dispose()
+        self.view.window?.performClose(nil)
+    }
+    
+    @IBAction func shutdownBtnClick(_ sender: Any) {
+        guard let dev = device else { return }
+        let connection = ConnectionAgent(address: dev.getIP())
+        if connection.isConnected {
+            let _ = connection.sendMessage(package: Package(header: "shutdown-device", content: "..."))
+        }
+        connection.dispose()
+        self.view.window?.performClose(nil)
+    }
+    
 }

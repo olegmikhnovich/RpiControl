@@ -15,9 +15,13 @@ class Package {
     init(data: [UInt8]) {
         if let response = String(bytes: data, encoding: .utf8) {
             let responseArray = response.split(separator: "\n")
-            if responseArray.count == 2 {
+            if responseArray.count >= 2 {
                 self.header = String(responseArray[0])
-                self.content = String(responseArray[1])
+                var body: String = ""
+                for i in 1..<responseArray.count {
+                    body += String(responseArray[i])
+                }
+                self.content = body
             }
         }
     }

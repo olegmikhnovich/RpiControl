@@ -77,5 +77,42 @@ extension HomeViewController: NSTableViewDelegate {
     }
 }
 
+extension FileExplorerViewController: NSTableViewDataSource {
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return files.count
+    }
+}
+
+extension FileExplorerViewController: NSTableViewDelegate {
+    fileprivate enum CellIdentifiers {
+        static let FileCell = "FileCellID"
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        var image: NSImage?
+        var text: String = ""
+        var cellIdentifier: String = ""
+        
+        let item = files[row]
+        
+        if tableColumn == tableView.tableColumns[0] {
+            if item.getType() == "Dir" {
+                image = NSImage.init(named: NSImage.folderName)
+            } else {
+                image = NSImage.init(named: NSImage.multipleDocumentsName)
+            }
+            text = item.getName()
+            cellIdentifier = CellIdentifiers.FileCell
+        }
+        
+        if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: cellIdentifier), owner: nil) as? NSTableCellView {
+            cell.textField?.stringValue = text
+            cell.imageView?.image = image ?? nil
+            return cell
+        }
+        return nil
+    }
+}
+
 
 
