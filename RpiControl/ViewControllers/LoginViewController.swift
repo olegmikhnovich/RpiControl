@@ -63,6 +63,7 @@ class LoginViewController: NSViewController {
             showWarnAlert(title: "Client was disconnected!", info: "Try again later...")
         }
         connection.dispose()
+        passwordField.stringValue = ""
     }
     
     @IBAction func cancelBtn(_ sender: Any) {

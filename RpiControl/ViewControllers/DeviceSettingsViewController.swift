@@ -97,10 +97,14 @@ class DeviceSettingsViewController: NSTabViewController {
             }
         }
         connection.dispose()
+        newDeviceField.stringValue = ""
     }
     
     @IBAction func saveNewPassword(_ sender: Any) {
-        if newPasswordField.stringValue != confirmNewPasswordField.stringValue { return }
+        if newPasswordField.stringValue != confirmNewPasswordField.stringValue {
+            confirmNewPasswordField.stringValue = ""
+            return
+        }
         guard let dev = device else { return }
         let connection = ConnectionAgent(address: dev.getIP())
         if connection.isConnected {
@@ -116,6 +120,9 @@ class DeviceSettingsViewController: NSTabViewController {
             }
         }
         connection.dispose()
+        oldPasswordField.stringValue = ""
+        newPasswordField.stringValue = ""
+        confirmNewPasswordField.stringValue = ""
     }
     
     @IBAction func rebootBtnClick(_ sender: Any) {

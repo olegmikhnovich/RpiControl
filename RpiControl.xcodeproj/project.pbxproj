@@ -18,6 +18,8 @@
 		844E48A221D3DA41006AD63D /* UserFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E48A121D3DA41006AD63D /* UserFile.swift */; };
 		8469981021C3DDF4005048B0 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469980F21C3DDF4005048B0 /* Device.swift */; };
 		8494309021C3F78100DFBE55 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494308F21C3F78100DFBE55 /* Extentions.swift */; };
+		84996FCF21D4E7D600FA1D7B /* ConnectivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84996FCE21D4E7D600FA1D7B /* ConnectivityViewController.swift */; };
+		84996FD121D4EE5700FA1D7B /* TerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84996FD021D4EE5700FA1D7B /* TerminalViewController.swift */; };
 		84B6203521C8E0840042967D /* VolumesUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6203421C8E0840042967D /* VolumesUtility.swift */; };
 		84B6A56B21D24CE80006ABC9 /* ConnectionAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6A56A21D24CE80006ABC9 /* ConnectionAgent.swift */; };
 		84B6A56F21D26F4A0006ABC9 /* DeviceSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */; };
@@ -42,6 +44,8 @@
 		844E48A121D3DA41006AD63D /* UserFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFile.swift; sourceTree = "<group>"; };
 		8469980F21C3DDF4005048B0 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		8494308F21C3F78100DFBE55 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		84996FCE21D4E7D600FA1D7B /* ConnectivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityViewController.swift; sourceTree = "<group>"; };
+		84996FD021D4EE5700FA1D7B /* TerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewController.swift; sourceTree = "<group>"; };
 		84B6203421C8E0840042967D /* VolumesUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumesUtility.swift; sourceTree = "<group>"; };
 		84B6A56A21D24CE80006ABC9 /* ConnectionAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionAgent.swift; sourceTree = "<group>"; };
 		84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				84D04AE721D0F77D00A185F4 /* DashboardViewController.swift */,
 				84B6A56E21D26F4A0006ABC9 /* DeviceSettingsViewController.swift */,
 				844E489E21D3D148006AD63D /* FileExplorerViewController.swift */,
+				84996FCE21D4E7D600FA1D7B /* ConnectivityViewController.swift */,
+				84996FD021D4EE5700FA1D7B /* TerminalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84996FD121D4EE5700FA1D7B /* TerminalViewController.swift in Sources */,
 				84210F4C21C25BA400DF15E1 /* HomeViewController.swift in Sources */,
 				84D04AE821D0F77D00A185F4 /* DashboardViewController.swift in Sources */,
 				84210F7821C29C8D00DF15E1 /* SearchDevices.swift in Sources */,
@@ -257,6 +264,7 @@
 				844E48A221D3DA41006AD63D /* UserFile.swift in Sources */,
 				8449103D21CBC55F0050692C /* LoginViewController.swift in Sources */,
 				84B6203521C8E0840042967D /* VolumesUtility.swift in Sources */,
+				84996FCF21D4E7D600FA1D7B /* ConnectivityViewController.swift in Sources */,
 				8469981021C3DDF4005048B0 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
