@@ -1494,6 +1494,9 @@ Gw
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="backBtnClick:" target="8eE-Mc-4Fg" id="1KG-Sw-6sG"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-3U-4cl">
                                             <rect key="frame" x="138" y="7" width="60" height="24"/>
@@ -1501,6 +1504,9 @@ Gw
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="freshBtnClick:" target="8eE-Mc-4Fg" id="Ogb-l7-WoN"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-rO-QB3">
                                             <rect key="frame" x="68" y="7" width="62" height="23"/>
@@ -1508,7 +1514,17 @@ Gw
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="homeBtnClick:" target="8eE-Mc-4Fg" id="WGy-ba-dOK"/>
+                                            </connections>
                                         </button>
+                                        <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k31-Bx-OME">
+                                            <rect key="frame" x="206" y="8" width="204" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <pathCell key="cell" selectable="YES" alignment="left" id="ZEO-dW-EAX">
+                                                <font key="font" metaFont="system"/>
+                                            </pathCell>
+                                        </pathControl>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="cRX-rO-QB3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n4f-7e-gzo" secondAttribute="trailing" constant="8" symbolic="YES" id="6Lf-ps-Opj"/>
@@ -1536,7 +1552,7 @@ Gw
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="119" minWidth="40" maxWidth="1000" id="Bud-Zd-AAQ">
+                                                <tableColumn width="535" minWidth="40" maxWidth="1000" id="Bud-Zd-AAQ">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="File">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1550,12 +1566,12 @@ Gw
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="FileCellID" id="qAk-vZ-WxY">
-                                                            <rect key="frame" x="1" y="1" width="119" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="535" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OVM-Ee-WSa">
                                                                     <rect key="frame" x="4" y="0.0" width="14" height="17"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="lv2-g8-VHC"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="lv2-g8-VHC"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbx-Nx-ZSQ">
                                                                     <rect key="frame" x="23" y="0.0" width="96" height="17"/>
@@ -1567,10 +1583,11 @@ Gw
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="Dbx-Nx-ZSQ" firstAttribute="centerY" secondItem="qAk-vZ-WxY" secondAttribute="centerY" id="Y7c-vY-6F4"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dbx-Nx-ZSQ" secondAttribute="trailing" constant="2" id="4Wi-RT-Kfk"/>
+                                                                <constraint firstItem="OVM-Ee-WSa" firstAttribute="leading" secondItem="qAk-vZ-WxY" secondAttribute="leading" constant="4" id="O8y-Fw-vQa"/>
+                                                                <constraint firstItem="OVM-Ee-WSa" firstAttribute="centerY" secondItem="qAk-vZ-WxY" secondAttribute="centerY" id="RtY-Qd-rd3"/>
                                                                 <constraint firstItem="Dbx-Nx-ZSQ" firstAttribute="top" secondItem="OVM-Ee-WSa" secondAttribute="top" id="b9g-n4-2W9"/>
                                                                 <constraint firstItem="Dbx-Nx-ZSQ" firstAttribute="leading" secondItem="OVM-Ee-WSa" secondAttribute="trailing" constant="7" id="mUU-wg-mdd"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Dbx-Nx-ZSQ" secondAttribute="trailing" constant="2" id="s0j-Hi-S07"/>
                                                                 <constraint firstItem="Dbx-Nx-ZSQ" firstAttribute="bottom" secondItem="OVM-Ee-WSa" secondAttribute="bottom" id="w5n-rh-JUT"/>
                                                             </constraints>
                                                             <connections>
@@ -1611,6 +1628,7 @@ Gw
                     </view>
                     <connections>
                         <outlet property="filesTableView" destination="ayK-kh-G9P" id="90A-VZ-gZq"/>
+                        <outlet property="pathControl" destination="k31-Bx-OME" id="qHd-rb-V0L"/>
                     </connections>
                 </viewController>
                 <customObject id="h4X-u5-Iji" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -9,6 +9,8 @@
 import Foundation
 
 class UserFile {
+    public let dirType: String = "Dir"
+    public let fileType: String = "File"
     private var name: String = ""
     private var type: String = ""
     
