@@ -1,16 +1,16 @@
 # RpiControl 
-[![Build Status](https://travis-ci.org/olegmikhnovich/RpiControl.svg?branch=master)](https://travis-ci.org/olegmikhnovich/RpiControl)
 [![Platform](https://img.shields.io/badge/platform-macOS%2010.14%2B-blue.svg)](https://www.apple.com/macos/mojave)
 
 RpiControl is an application for Apple macOS.
 You can control your Raspberry Pi devices using this app.
 
-This project contains 2 modules
+This project contains 3 modules
 
 | Module        | Description     |
 | ------------- |-----------------|
 | [RpiControl Core](https://github.com/olegmikhnovich/RpiControlCore) | Engine |
 | [RpiControl App](https://github.com/olegmikhnovich/RpiControl)      | Client application for macOS |
+| [RpiControl Mobile](https://github.com/olegmikhnovich/RpiControlMobile)      | Client application for iOS |
 
 ## Requirements
 * macOS 10.14 or newer
