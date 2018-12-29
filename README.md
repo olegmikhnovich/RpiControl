@@ -1,6 +1,8 @@
 # RpiControl 
 [![Platform](https://img.shields.io/badge/platform-macOS%2010.14%2B-blue.svg)](https://www.apple.com/macos/mojave)
 
+**[Project website](https://olegmikhnovich.github.io/rpicontrolproject)**
+
 RpiControl is an application for Apple macOS.
 You can control your Raspberry Pi devices using this app.
 
